@@ -164,3 +164,27 @@ Array
 
 )
 --------------------------------------------------------
+<?php
+//For Loops
+$ninjas = ['shaun', 'ryu', 'yoshi'];
+for($i = 0; $i < count($ninjas); $i++){
+    echo $ninjas[$i]."\n";
+}
+?>
+
+shaun
+ryu
+yoshi
+--------------------------------------------------------
+<?php
+//For Loops
+$ninjas = ['shaun', 'ryu', 'yoshi'];
+foreach($ninjas as $ninja){
+    echo $ninja."\n";
+}
+?>
+
+shaun
+ryu
+yoshi
+--------------------------------------------------------
