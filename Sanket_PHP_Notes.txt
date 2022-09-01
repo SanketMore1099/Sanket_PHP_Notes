@@ -55,3 +55,112 @@ Array
     [Hitesh] => Blue
 )
 --------------------------------------------------------
+<?php
+//MultiDimentional Arrays
+$blogs = [
+    ['mario party', 'mario', 'lorem', 30],
+    ['mario cart cheats', 'toad', 'lorem', 25],
+    ['zelda hidden chests', 'link', 'lorem', 50]
+];
+print_r($blogs);
+?>
+
+Array
+(
+    [0] => Array
+        (
+            [0] => mario party
+            [1] => mario
+            [2] => lorem
+            [3] => 30
+        )
+
+    [1] => Array
+        (
+            [0] => mario cart cheats
+            [1] => toad
+            [2] => lorem
+            [3] => 25
+        )
+
+    [2] => Array
+        (
+            [0] => zelda hidden chests
+            [1] => link
+            [2] => lorem
+            [3] => 50
+        )
+
+)
+--------------------------------------------------------
+<?php
+//MultiDimentional Arrays
+$blogs = [
+    ['mario party', 'mario', 'lorem', 30],
+    ['mario cart cheats', 'toad', 'lorem', 25],
+    ['zelda hidden chests', 'link', 'lorem', 50]
+];
+print_r($blogs[1]);
+?>
+
+Array
+(
+    [0] => mario cart cheats
+    [1] => toad
+    [2] => lorem
+    [3] => 25
+)
+--------------------------------------------------------
+<?php
+//MultiDimentional Arrays
+$blogs = [
+    ['mario party', 'mario', 'lorem', 30],
+    ['mario cart cheats', 'toad', 'lorem', 25],
+    ['zelda hidden chests', 'link', 'lorem', 50]
+];
+print_r($blogs[1][1]);
+?>
+
+toad
+--------------------------------------------------------
+<?php
+//MultiDimentional Arrays
+$blogs = [
+    ['mario party', 'mario', 'lorem', 30],
+    ['mario cart cheats', 'toad', 'lorem', 25],
+    ['zelda hidden chests', 'link', 'lorem', 50]
+];
+
+$popped = array_pop($blogs);
+print_r($popped);
+
+print_r($blogs);
+?>
+
+Array
+(
+    [0] => zelda hidden chests
+    [1] => link
+    [2] => lorem
+    [3] => 50
+)
+Array
+(
+    [0] => Array
+        (
+            [0] => mario party
+            [1] => mario
+            [2] => lorem
+            [3] => 30
+        )
+
+    [1] => Array
+        (
+            [0] => mario cart cheats
+            [1] => toad
+            [2] => lorem
+            [3] => 25
+        )
+
+)
+--------------------------------------------------------
