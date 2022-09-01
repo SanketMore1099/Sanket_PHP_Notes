@@ -1,1 +1,57 @@
-Hi!
+<?php
+//Arrays
+$names1 = ['Sanket', 'Dhiraj'];
+$names2 = ['Aditya', 'Hitesh'];
+
+$namesTotal = array_merge($names1, $names2);
+
+print_r($namesTotal);
+?>
+
+Array
+(
+    [0] => Sanket
+    [1] => Dhiraj
+    [2] => Aditya
+    [3] => Hitesh
+)
+--------------------------------------------------------
+<?php
+//Associative Arrays
+$ninjasOne = ['Sanket' => 'Black', 'Dhiraj' => 'Brown', 'Sakshi' => 'Orange'];
+print_r($ninjasOne);
+?>
+
+Array
+(
+    [Sanket] => Black
+    [Dhiraj] => Brown
+    [Sakshi] => Orange
+)
+
+--------------------------------------------------------
+<?php
+//Associative Arrays
+$ninjasOne = ['Sanket' => 'Black', 'Dhiraj' => 'Brown', 'Sakshi' => 'Orange'];
+echo $ninjasOne['Sanket']
+?>
+
+Black
+--------------------------------------------------------
+<?php
+//Associative Arrays
+$ninjasOne = ['Sanket' => 'Black', 'Dhiraj' => 'Brown', 'Sakshi' => 'Orange'];
+$ninjasTwo = array('Aditya'=>'Green', 'Hitesh'=>'Blue');
+$ninjasTotal = array_merge($ninjasOne, $ninjasTwo);
+print_r($ninjasTotal);
+?>
+
+Array
+(
+    [Sanket] => Black
+    [Dhiraj] => Brown
+    [Sakshi] => Orange
+    [Aditya] => Green
+    [Hitesh] => Blue
+)
+--------------------------------------------------------
